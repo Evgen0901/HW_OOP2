@@ -232,4 +232,33 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, action);
     }
+
+    @Test
+    public void theSoundIsLessThanTheMinimum01() {
+        Radio radio = new Radio();
+
+
+        radio.setCurrentVolume(-1);
+
+
+        int expected = 0;
+        int action = radio.getCurrentVolume();
+
+        Assertions.assertEquals(expected, action);
+    }
+
+    @Test
+    public void theSoundIsLessThanTheMax110() {
+        Radio radio = new Radio();
+
+
+        radio.setCurrentVolume(101);
+
+
+        int expected = 0;
+        int action = radio.getCurrentVolume();
+
+        Assertions.assertEquals(expected, action);
+    }
+
 }

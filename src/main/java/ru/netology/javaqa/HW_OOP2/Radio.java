@@ -14,9 +14,9 @@ public class Radio {
     }
 
     public void prev() {
-        if (currentStation !=0) {
+        if (currentStation != 0) {
             currentStation--;
-        }else {
+        } else {
             currentStation = 9;
         }
     }
@@ -24,17 +24,18 @@ public class Radio {
     public void volumePlus() {
         if (currentVolume != 100) {
             currentVolume++;
-        }else {
+        } else {
             currentVolume = 100;
         }
     }
 
     public void volumeMinus() {
-        if (currentVolume!=0) {
+        if (currentVolume != 0) {
             currentVolume--;
-        }else {
+        } else {
             currentVolume = 0;
         }
+
     }
 
     public int getCurrentStation() {
